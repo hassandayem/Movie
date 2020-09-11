@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://kit.fontawesome.com/c3be063c70.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie</title>
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light custom-navbar">
+      <a class="navbar-brand" href="/"><img src="./images/miscellaneous.png" alt="logo" id="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link custom-nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" onclick="renderActors()">Actor List</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle custom-nav-link" href="#" id="navbarSortByGenre" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Movies
+            </a>
+            <div id="genre-menu" class="dropdown-menu" aria-labelledby="navbarSortByGenre">
+   
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      </nav>
+    <div class="container-fluid">
+    
+      <section class="py-5">
+        <div class="container text-center">
+          <strong>Find your favourit movie</strong>
+          <h1 class="display-4 my-3">We've built this website becasue Louis and Ammar asked to build, but you can use it to find some details about your favourit movie</h1>
+          <a class="btn custom-btn my-2" href="/index.html">Start Browsing &raquo;</a>
+        </div>
+      </section>
+    
+      <section class="py-5">
+        <div class="container text-center">
+          <h2>Some of our awesome features</h2>
+          <img class="img-fluid my-4" src="./images/Movie-Seracher.png" alt="Movie searcher front page">
+          <div class="row mt-5 text-left">
+            <div class="col-md-4 d-flex align-items-start pt-5 pb-5">
+              <div>
+                <h3 class="mb-3">Now Playing</h3>
+                <p>The website designed to show the now playing movies, so you don't have to waste your time, and bla bla bla.</p>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-start pt-5 pb-5">
+              
+              <div>
+                <h3 class="mb-3">One Page</h3>
+                <p>Don't leave from page to page, do your search, browse movies or actors from only one page.</p>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-start pt-5 pb-5">
+              
+              <div>
+                <h3 class="mb-3">Speed</h3>
+                <p>Becasue this website is one page website, you fill how much blazing fast it is.</p>
+              </div>
+            </div>
+          </div>
+          <a class="btn custom-btn my-2" href="/index.html">Start Browsing &raquo;</a>
+        </div>
+      </section>
+    
+      <section class="py-5">
+        <div class="container text-center">
+          <h2>The Team</h2>
+          <p class="mb-5">We are the guys that made this whole thing possible</p>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <img class="mb-3 rounded-circle" src="./images/Burak.png" alt="Burak Selvi's photo" width="60%">
+              <h5 class="mb-0">Burak Selvi</h5>
+              <small>CEO</small>
+              <p class="my-4 text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias quod libero nihil accusamus numquam tenetur ipsum voluptatum, animi placeat quos laboriosam natus explicabo molestias fuga iusto dicta porro veritatis iste!</p>
+            </div>
+            <div class="col-md-4 offset-md-4 mb-4">
+              <img class="mb-3 rounded-circle" src="./images/Hassan-AbdulDayem.jpeg" alt="Hassan Abduldayem's photo" width="60%">
+              <h5 class="mb-0">Hassan Abduldayem</h5>
+              <small>Anything</small>
+              <p class="my-4 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat ipsum, commodi aliquam libero quam quas impedit ratione, iusto modi dolor est beatae vero! Dolores similique doloribus explicabo laborum velit provident?</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <footer class="py-3">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center flex-column flex-md-row border-bottom pb-2">
+            <h5 class="ml-0 ml-md-3 mb-0"><a class="custom-link" href="#">Movie Searcher</a></h5>
+            <ul class="nav justify-content-center">
+              <li class="nav-item"><a class="nav-link custom-link" href="/index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link custom-link" href="#" onclick="renderActors()">Actors</a></li>
+              <li class="nav-item"><a class="nav-link custom-link" href="about.html">About</a></li>
+            </ul>
+          </div>
+          <div class="d-flex justify-content-center align-items-center justify-content-md-between flex-column flex-md-row mx-3 mt-3">
+            <div class="d-flex"><a href="#"><img class="mr-3" src="placeholder/icons/twitter.svg" alt=""></a><a href="#"><img class="mr-3" src="placeholder/icons/facebook-f.svg" alt=""></a><a href="#"><img src="placeholder/icons/instagram.svg" alt=""></a></div>
+            <div class="d-flex mt-3 mt-md-0">
+              <p class="mb-0 small text-muted">&copy; 2020 Movie Searcher. No rights are reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/popper/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+  </body>
+</html>
